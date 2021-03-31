@@ -2,7 +2,7 @@ import pandas as pd
 
 
 def load_data():
-    dataset = pd.read_csv("dataset/exercise_dataset.csv")
+    dataset = pd.read_csv("exercise_dataset.csv")
     dataset.rename(columns={"Activity, Exercise or Sport (1 hour)": "Activity", "Calories per kg": "Calories_per_kg"}
                    , inplace=True)
     data_required = dataset[['Activity', 'Calories_per_kg']]
