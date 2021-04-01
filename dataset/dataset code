@@ -1,0 +1,34 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+import random
+df = pd.read_csv("exercise_dataset.csv")
+df.head()
+
+#Enter weight in lbs (US) and converts from lbs. to kg. for dataset
+weight = int(input('Enter weight in lbs: '))
+weight = ('{:.1f}'.format(weight/2.205))
+
+#enter number of total workout minutes for the day
+minutes = int(input('Enter workout minutes: '))
+
+#Enter workout type (Cardio, Legs, Arms, Back), and based on workout type, we reference a specific dynamic programming table
+
+#Create specific tables/dictionaries per workout type for algo to reference
+
+#Algorithm goes here
+
+
+
+#prints a dictionary "Workout schedule day 1: Cycling, xx minutes, xxx kcal; biking, xx minutes, xxx kcal"
+print("Workout schedule day 1:", "schedule") 
+#print("Total Calories burned day 1: <calculation to be created, sample only>", weight*df.iloc[0]["Calories per kg"], "kcal")
+
+
+#TODO
+
+#COMPLETE - Import dataset and create variables
+#Verify that calories burned pr kg is accurate (right now, values do not match column values)
+#Remove unecessary activities from file (python edit or csv edit?)
+#Add column for calories per minute to use in function (currently only calories per hour, simple /60)
+#Add column for activity limits (this will be used in our dynamic programming table, minutes:calories)
+#Create dictionary/hash table for day 1 for algorithm to reference
