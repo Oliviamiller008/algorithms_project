@@ -11,22 +11,22 @@ def workout_plan(minutes, time_for_exercise, calories, num_exercises):
                 K[i][w] = 0
             elif time_for_exercise[i-1] <= w:
                 K[i][w] = max(calories[i-1] + K[i-1][w-time_for_exercise[i-1]],  K[i-1][w])
-                S[w] = i 
             else:
                 K[i][w] = K[i-1][w]
 
 # Print the optimal solution    
-    res = K[num_exercises][minutes]     
-    print(res)
+    calories_burned = K[num_exercises][minutes]     
+    print('Maximum calories: ' + str(calories_burned))
+    print('Do these exercises: ')
     w = minutes  
     for i in range(num_exercises, 0 ,-1):
-        if res <= 0:
+        if calories_burned <= 0:
             break
-        if res == K[i-1][w]:
+        if calories_burned == K[i-1][w]:
             continue
         else:
             print(time_for_exercise[i-1])
-            res = res - calories[i-1]
+            calories_burned = calories_burned - calories[i-1]
         w = w - time_for_exercise[i-1]
 
 
