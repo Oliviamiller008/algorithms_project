@@ -1,0 +1,24 @@
+"Activity, Exercise or Sport (1 hour)",Maximum Minutes,Calories per Pound per Minute
+"Cycling, 10-11.9 mph, light",20,0.045384615
+"Cycling, 12-13.9 mph, moderate",15,0.060512821
+"Cycling, 14-15.9 mph, vigorous",10,0.075641026
+Lunges,10,0.060512821
+Pushups,5,0.060512821
+Sit-ups,5,0.060512821
+Planks,5,0.060512821
+Jump Rope,15,0.060512821
+Jumping Jacks,15,0.060512821
+Chin-ups,5,0.060512821
+Squats,5,0.026538462
+Weight lifting,20,0.022692308
+Walking up Stairs,20,0.068076923
+Stretching,5,0.03025641
+"Running, 5 mph (12 minute mile)",25,0.060512821
+"Running, 7 mph (8.5 min mile)",20,0.087051282
+"Running, 9 mph (6.5 min mile)",5,0.113461538
+Jogging (<5 mph),30,0.060512821
+"Walking 2.0 mph, slow",30,0.018974359
+"Walking 3.0 mph, moderate",30,0.025
+"Walking 4.0 mph, very brisk",30,0.037820513
+"Swimming laps, freestyle, fast",10,0.075641026
+"Swimming laps, freestyle, slow",15,0.052948718
