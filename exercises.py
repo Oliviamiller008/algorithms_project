@@ -2,7 +2,7 @@ class exercises:
     def __init__(self, name, cal, time):
         self.name = name
         self.cal = cal
-        self.time = time
+        self.time = int(time)
 
     def getcal(self):
         return self.cal
